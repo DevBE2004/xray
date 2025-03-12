@@ -1,7 +1,6 @@
 #!/bin/sh
 
-#Config xray
-
+# Config xray
 rm -rf /etc/xray/config.json
 cat << EOF > /etc/xray/config.json
 {
@@ -10,7 +9,6 @@ cat << EOF > /etc/xray/config.json
       "port": $PORT,
       "protocol": "$PROTOCOL",
       "settings": {
-        "decryption": "none",
         "clients": [
           {
             "id": "$UUID"
@@ -30,6 +28,5 @@ cat << EOF > /etc/xray/config.json
 }
 EOF
 
-#run xray
-
+# run xray
 xray -c /etc/xray/config.json
