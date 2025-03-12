@@ -5,7 +5,7 @@
     "env": {
         "PROTOCOL": {
             "description": "choose vless or vmess",
-            "value": "vless"
+            "value": "vmess"
         },
         "UUID": {
             "description": "xray UUID",
